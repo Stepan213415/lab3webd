@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Аеропорт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Інформація про аеропорт</h1>
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#planes">Літаки</a></li>
+        <li><a data-toggle="tab" href="#flights">Рейси</a></li>
+        <li><a data-toggle="tab" href="#routes">Маршрути</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="planes" class="tab-pane fade in active">
+            <h3>Літаки</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Номер</th>
+                        <th>Марка</th>
+                        <th>Кількість місць</th>
+                        <th>Швидкість</th>
+                        <th>Максимальна дальність</th>
+                    </tr>
+                </thead>
+                <tbody id="planes-table"></tbody>
+            </table>
+        </div>
+        <div id="flights" class="tab-pane fade">
+            <h3>Рейси</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Літак</th>
+                        <th>Дата вильоту</th>
+                        <th>Дата прибуття</th>
+                        <th>Продані квитки</th>
+                    </tr>
+                </thead>
+                <tbody id="flights-table"></tbody>
+            </table>
+        </div>
+        <div id="routes" class="tab-pane fade">
+            <h3>Маршрути</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Пункт вильоту</th>
+                        <th>Пункт призначення</th>
+                        <th>Тип</th>
+                        <th>Відстань</th>
+                    </tr>
+                </thead>
+                <tbody id="routes-table"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
+
